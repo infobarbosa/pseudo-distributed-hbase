@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 
   #configuracao da instancia do node master
   config.vm.define "hbase" do |hbase|
-    hbase.vm.box = "ubuntu/xenial64"
+    hbase.vm.box = "ubuntu/bionic64"
 
     hbase.vm.network "private_network", ip: "192.168.56.40"
     hbase.vm.hostname = "hbase.infobarbosa.github.com"
