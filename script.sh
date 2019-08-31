@@ -2,13 +2,14 @@
 
 #hosts
 sed -i "s/127.0.1.1/#127.0.1.1/" /etc/hosts
+echo "127.0.0.1	hbase.infobarbosa.github.com	hbase" >> /etc/hosts
 
 useradd -m hadoop
 echo "hadoop:hadoop" | chpasswd
 
-su hadoop -c 'mkdir -p /home/hadoop/.ssh'
-su hadoop -c 'ssh-keygen -t rsa -P '' -f /home/hadoop/.ssh/id_rsa'
-su hadoop -c 'cat ~/.ssh/id_rsa.pub >> /home/hadoop/.ssh/authorized_keys'
+su hadoop -c "mkdir -p /home/hadoop/.ssh"
+su hadoop -c "ssh-keygen -t rsa -P '' -f /home/hadoop/.ssh/id_rsa"
+su hadoop -c "cat ~/.ssh/id_rsa.pub >> /home/hadoop/.ssh/authorized_keys"
 chmod 0600 /home/hadoop/.ssh/*
 
 locale-gen en_US.UTF-8
