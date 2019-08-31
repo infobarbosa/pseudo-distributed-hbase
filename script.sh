@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #hosts
-cat hosts >> /etc/hosts
 sed -i "s/127.0.1.1/#127.0.1.1/" /etc/hosts
 
 useradd -m hadoop
