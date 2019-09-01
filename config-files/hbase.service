@@ -4,12 +4,12 @@ After=syslog.target network.target remote-fs.target nss-lookup.target network-on
 Requires=network-online.target
 
 [Service]
-User=hadoop
-Group=hadoop
+User=vagrant
+Group=vagrant
 Type=forking
 ExecStart=/opt/hbase/bin/start-hbase.sh
 ExecStop=/opt/hbase/bin/stop-hbase.sh
-WorkingDirectory=/home/hadoop/
+WorkingDirectory=/home/vagrant/
 Environment=JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 TimeoutStartSec=2min
 Restart=on-failure

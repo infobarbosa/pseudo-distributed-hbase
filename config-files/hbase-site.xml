@@ -27,7 +27,7 @@
   </property>
   <property>
     <name>hbase.zookeeper.property.dataDir</name>
-    <value>/home/hadoop/zookeeper</value>
+    <value>/home/vagrant/zookeeper</value>
   </property>
   <property>
     <name>hbase.cluster.distributed</name>
