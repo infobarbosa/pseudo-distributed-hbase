@@ -1,6 +1,10 @@
 .vagrant
 *.log
 .vscode
+hbase-lab/.classpath
+hbase-lab/.project
+hbase-lab/.settings
+hbase-lab/dependency-reduced-pom.xml
 packages
 target
 target/*
