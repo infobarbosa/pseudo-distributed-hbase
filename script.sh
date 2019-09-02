@@ -12,7 +12,7 @@ chmod 0600 /home/vagrant/.ssh/*
 
 locale-gen en_US.UTF-8
 add-apt-repository ppa:openjdk-r/ppa
-apt-get -y update && apt-get install -y openjdk-8-jdk net-tools
+apt-get -y update && apt-get install -y openjdk-8-jdk net-tools maven
 
 echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre" >> /etc/profile
 echo "export PATH=${JAVA_HOME}/bin:${PATH}" >> /etc/profile
