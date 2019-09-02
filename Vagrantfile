@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     hbase.vm.network "private_network", ip: "192.168.56.40"
     hbase.vm.hostname = "hbase.infobarbosa.github.com"
     hbase.vm.provider "virtualbox" do |v|
-      v.memory = 2048
+      v.memory = 2500
       v.cpus = 4
       v.name = "pseudo-distributed-lab-hbase.vagrant"
     end
