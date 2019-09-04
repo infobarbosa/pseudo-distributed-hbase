@@ -24,6 +24,8 @@ hbase shell
 scan 'clientes'
 quit
 
+java -cp target/hbase-lab-1.0-SNAPSHOT-jar-with-dependencies.jar com.github.infobarbosa.hbase.GetOperation
+
 java -cp target/hbase-lab-1.0-SNAPSHOT-jar-with-dependencies.jar com.github.infobarbosa.hbase.DeleteTable
 
 hbase shell
